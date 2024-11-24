@@ -1,4 +1,4 @@
-# Python for Econometrics
+# Econometrics in Python
 
 A curated list of Python packages for econometrics, machine learning, and data analysis. Organized by their primary purpose, this repository serves as a quick reference for researchers, analysts, and practitioners.
 

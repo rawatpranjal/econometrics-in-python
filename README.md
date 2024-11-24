@@ -69,6 +69,25 @@ Packages for improving code quality, efficiency, and maintainability.
 
 ---
 
+## Automatic Differentiation
+
+Libraries supporting automatic differentiation and gradient-based optimization.
+
+- **PyTorch** - Deep learning framework with automatic differentiation capabilities. [Docs](https://pytorch.org/)
+- **JAX** - High-performance numerical computing and automatic differentiation. [Docs](https://jax.readthedocs.io/)
+
+---
+
+## Bayesian Tools
+
+Packages for Bayesian analysis and probabilistic modeling.
+
+- **PyMC** - Probabilistic programming library for Bayesian analysis. [Docs](https://www.pymc.io/)
+- **Bambi** - High-level Bayesian model building interface. [Docs](https://bambinos.github.io/bambi/)
+- **LightweightMMM** - Bayesian modeling for marketing mix modeling. [Docs](https://github.com/google/lightweight_mmm)
+
+---
+
 ### Contributing
 
 Feel free to suggest additional packages by opening an issue or submitting a pull request.

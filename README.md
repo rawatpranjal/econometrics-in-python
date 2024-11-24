@@ -12,6 +12,7 @@ Packages for traditional econometric analysis.
 - **Statsmodels** - Comprehensive library for statistical models and tests. [Docs](https://www.statsmodels.org/)
 - **Linearmodels** - Advanced panel data regression and instrumental variable estimation. [Docs](https://github.com/bashtage/linearmodels)
 - **PyFixest** - Lightweight package for fixed-effects regression. [Docs](https://github.com/deepcharles/pyfixest)
+- **rdrobust** - Regression Discontinuity Tools. [Docs](https://github.com/deepcharles/pyfixest)
 
 ---
 
@@ -60,15 +61,6 @@ Tools for generating synthetic data.
 
 ---
 
-## Tools
-
-Packages for improving code quality, efficiency, and maintainability.
-
-- **Pylint** - Code analysis tool for identifying errors and enforcing coding standards. [Docs](https://pylint.pycqa.org/)
-- **TQDM** - A fast, extensible progress bar for Python. [Docs](https://github.com/tqdm/tqdm)
-
----
-
 ## Automatic Differentiation
 
 Libraries supporting automatic differentiation and gradient-based optimization.
@@ -78,13 +70,22 @@ Libraries supporting automatic differentiation and gradient-based optimization.
 
 ---
 
-## Bayesian Tools
+## Bayesian Models
 
 Packages for Bayesian analysis and probabilistic modeling.
 
 - **PyMC** - Probabilistic programming library for Bayesian analysis. [Docs](https://www.pymc.io/)
 - **Bambi** - High-level Bayesian model building interface. [Docs](https://bambinos.github.io/bambi/)
 - **LightweightMMM** - Bayesian modeling for marketing mix modeling. [Docs](https://github.com/google/lightweight_mmm)
+
+---
+
+## Tools
+
+Packages for improving code quality, efficiency, and maintainability.
+
+- **Pylint** - Code analysis tool for identifying errors and enforcing coding standards. [Docs](https://pylint.pycqa.org/)
+- **TQDM** - A fast, extensible progress bar for Python. [Docs](https://github.com/tqdm/tqdm)
 
 ---
 

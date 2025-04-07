@@ -269,4 +269,4 @@ Contributions are welcome! Please refer to the `CONTRIBUTING.md` file (linked vi
 2.  **Improve documentation**: Help enhance descriptions, add examples, or correct errors.
 3.  **Report issues**: Notify us about broken links, outdated information, or suggest new categories.
 
-*Last updated: November 2024*
+*Last updated: April 2025*

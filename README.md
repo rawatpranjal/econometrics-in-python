@@ -102,6 +102,7 @@ Quasi-experimental methods for estimating causal effects from policy changes or 
 | **SyntheticControlMethods** | Implementation of synthetic control methods for comparative case studies when panel data is available.                     | [GitHub](https://github.com/OscarEngelbrektson/SyntheticControlMethods)                   | `pip install SyntheticControlMethods` |
 | **rdrobust**                | Comprehensive tools for Regression Discontinuity Designs (RDD), including optimal bandwidth selection, estimation, inference. | [GitHub](https://github.com/rdpackages/rdrobust) • [PyPI](https://pypi.org/project/rdrobust/) | `pip install rdrobust`            |
 | **rdd**                     | Toolkit for sharp RDD analysis, including bandwidth calculation and estimation, integrating with pandas.                 | [GitHub](https://github.com/evan-magnusson/rdd)                                         | `pip install rdd`                 |
+| **mlsynth**              | Implements advanced synthetic control methods: forward DiD, cluster SC, factor models, and proximal SC. Designed for single-treated-unit settings. | [Docs](https://mlsynth.readthedocs.io/en/latest/) • [GitHub](https://github.com/jaredjgreathouse/mlsynth) | `pip install mlsynth` |
 
 ---
 

@@ -3,7 +3,7 @@
 [![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE) <!-- Note: Link points to LICENSE file in the repository root -->
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md) <!-- Note: Link points to CONTRIBUTING.md file in the repository root -->
-
+ 
 A comprehensive collection of Python packages for econometrics, causal inference, quantitative economics, and data analysis. This repository serves as a reference guide for researchers, data scientists, economists, and practitioners working with economic data. Most packages can be installed via `pip`.
 
 ## Contents

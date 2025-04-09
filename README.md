@@ -13,14 +13,15 @@ A comprehensive collection of Python packages for econometrics, causal inference
 - [Panel Data & Fixed Effects](#panel-data--fixed-effects)
 - [Instrumental Variables (IV) & GMM](#instrumental-variables-iv--gmm)
 - [Causal Inference & Matching](#causal-inference--matching)
+- [Causal Discovery & Graphical Models](#causal-discovery--graphical-models) <-- NEW
 - [Double/Debiased Machine Learning (DML)](#doubledebiased-machine-learning-dml)
 - [Program Evaluation Methods (DiD, SC, RDD)](#program-evaluation-methods-did-sc-rdd)
 - [Time Series Analysis](#time-series-analysis)
-- [High-Dimensional Methods](#high-dimensional-methods)
 - [Discrete Choice Models](#discrete-choice-models)
+- [Structural Econometrics & Estimation](#structural-econometrics--estimation) <-- NEW
 - [Quantile Regression & Distributional Methods](#quantile-regression--distributional-methods)
 - [Bayesian Econometrics](#bayesian-econometrics)
-- [Marketing Mix Models (MMM)](#marketing-mix-models-mmm)
+- [Marketing Mix Models (MMM) & Business Analytics](#marketing-mix-models-mmm--business-analytics) <-- Renamed slightly
 - [Spatial Econometrics](#spatial-econometrics)
 - [Natural Language Processing for Economics](#natural-language-processing-for-economics)
 - [Synthetic Data Generation](#synthetic-data-generation)
@@ -93,6 +94,20 @@ Tools for estimating causal effects using observational data, focusing on matchi
 | **CausalML**       | Focuses on uplift modeling and heterogeneous treatment effect estimation using machine learning techniques.                        | [Docs](https://causalml.readthedocs.io/) • [GitHub](https://github.com/uber/causalml)     | `pip install causalml`    |
 | **CausalMatch**    | Implements Propensity Score Matching (PSM) and Coarsened Exact Matching (CEM) with ML flexibility for propensity score estimation. | [Docs & GitHub](https://github.com/bytedance/CausalMatch)                             | `pip install causalmatch` |
 | **fastmatch**      | Fast k-nearest-neighbor matching for large datasets using Facebook's FAISS library.                                                  | [Docs & GitHub](https://github.com/py-econometrics/fastmatch)                         | `pip install fastmatch`   |
+| **scikit-uplift**| Focuses on uplift modeling and estimating heterogeneous treatment effects using various ML-based methods. | [Docs](https://scikit-uplift.readthedocs.io/en/latest/) • [GitHub](https://github.com/maks-sh/scikit-uplift) | `pip install scikit-uplift`|
+
+---
+
+## Causal Discovery & Graphical Models
+
+Libraries focused on learning causal structures (DAGs, Bayesian Networks) from data and performing inference using graphical models.
+
+| Package                             | Description (Focus)                                                                                     | Links                                                                                             | Installation              |
+|-------------------------------------|---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------|
+| **Ananke**                          | Causal inference using graphical models (DAGs), including identification theory and effect estimation.    | [Docs](https://ananke.readthedocs.io/) • [GitHub](https://github.com/py-why/Ananke)                   | `pip install ananke-causal` |
+| **CausalNex**                       | Uses Bayesian Networks for causal reasoning, combining ML with expert knowledge to model relationships. | [GitHub](https://github.com/microsoft/causalnex)                                                  | `pip install causalnex`     |
+| **Causal Discovery Toolbox (CDT)**  | Implements algorithms for causal discovery (recovering causal graph structure) from observational data.   | [Docs](https://fentechsolutions.github.io/CausalDiscoveryToolbox/html/index.html) • [GitHub](https://github.com/FenTechSolutions/CausalDiscoveryToolbox) | `pip install cdt`           |
+| **DoWhy**                           | (See Causal Inference) Includes functionality for modeling assumptions with causal graphs (DAGs).         | [Docs](https://www.pywhy.org/dowhy/) • [GitHub](https://github.com/py-why/dowhy)                | `pip install dowhy`       |
 
 ---
 
@@ -119,6 +134,7 @@ Quasi-experimental methods for estimating causal effects from policy changes or 
 | **rdrobust**                | Comprehensive tools for Regression Discontinuity Designs (RDD), including optimal bandwidth selection, estimation, inference. | [GitHub](https://github.com/rdpackages/rdrobust) • [PyPI](https://pypi.org/project/rdrobust/) | `pip install rdrobust`            |
 | **rdd**                     | Toolkit for sharp RDD analysis, including bandwidth calculation and estimation, integrating with pandas.                 | [GitHub](https://github.com/evan-magnusson/rdd)                                         | `pip install rdd`                 |
 | **mlsynth**              | Implements advanced synthetic control methods: forward DiD, cluster SC, factor models, and proximal SC. Designed for single-treated-unit settings. | [Docs](https://mlsynth.readthedocs.io/en/latest/) • [GitHub](https://github.com/jaredjgreathouse/mlsynth) | `pip install mlsynth` |
+| **CausalImpact** | Python port of Google's R package for estimating causal effects of interventions on time series using Bayesian structural time-series models. | [Docs](https://google.github.io/CausalImpact/CausalImpact/CausalImpact.html) (R) • [GitHub (Py)](https://github.com/tcassou/causal_impact) | `pip install causalimpact` |
 
 ---
 
@@ -164,6 +180,21 @@ Packages for analyzing choice behavior, demand estimation, and modeling qualitat
 
 ---
 
+## Structural Econometrics & Estimation
+
+Frameworks for specifying, simulating, and estimating structural economic models, often involving dynamic programming or complex likelihoods.
+
+| Package             | Description (Focus)                                                                                             | Links                                                                                  | Installation          |
+|---------------------|-----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|-----------------------|
+| **respy**           | Simulation and estimation of finite-horizon dynamic discrete choice (DDC) models (e.g., labor/education choice).  | [Docs](https://respy.readthedocs.io/en/latest/) • [GitHub](https://github.com/OpenSourceEconomics/respy) | `pip install respy`     |
+| **HARK**            | Toolkit for solving, simulating, and estimating models with heterogeneous agents (e.g., consumption-saving).    | [Docs](https://hark.readthedocs.io/en/latest/) • [GitHub](https://github.com/econ-ark/HARK)      | `pip install econ-ark`  |
+| **Dolo**            | Framework for describing and solving economic models (DSGE, OLG, etc.) using a declarative YAML-based format.     | [Docs](https://dolo.readthedocs.io/en/latest/) • [GitHub](https://github.com/EconForge/dolo)       | `pip install dolo`      |
+| **Biogeme**         | Maximum likelihood estimation of parametric models, with strong support for complex discrete choice models.     | [Docs](https://biogeme.epfl.ch/index.html) • [GitHub](https://github.com/michelbierlaire/biogeme) | `pip install biogeme`   |
+| **PyBLP**           | (See Discrete Choice) Estimation of demand using Berry-Levinsohn-Pakes (BLP) structural models.               | [Docs](https://pyblp.readthedocs.io/) • [GitHub](https://github.com/jeffgortmaker/pyblp)    | `pip install pyblp`     |
+| **QuantEcon.py**    | Core library for quantitative economics: dynamic programming, Markov chains, game theory, numerical methods.    | [Docs](https://quantecon.org/python-lectures/) • [GitHub](https://github.com/QuantEcon/QuantEcon.py) | `pip install quantecon` |
+
+---
+
 ## Quantile Regression & Distributional Methods
 
 Methods for modeling the conditional quantiles or the entire conditional distribution of an outcome variable.
@@ -189,16 +220,17 @@ Packages for performing Bayesian inference and probabilistic modeling.
 
 ---
 
-## Marketing Mix Models (MMM)
+## Marketing Mix Models (MMM) & Business Analytics
 
-Specialized packages for attributing marketing impact and optimizing spend using statistical models.
+Specialized packages for attributing marketing impact, customer analytics (CLV), and optimizing spend.
 
-| Package         | Description                                                                                                | Links                                                                                                   | Installation / Access             |
-|-----------------|------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|-----------------------------------|
-| **LightweightMMM**| Google's Bayesian approach to Marketing Mix Modeling focusing on channel attribution and budget optimization. | [Docs](https://lightweight-mmm.readthedocs.io) • [GitHub](https://github.com/google/lightweight_mmm)       | `pip install lightweight_mmm`     |
+| Package          | Description                                                                                                | Links                                                                                                   | Installation / Access        |
+|------------------|------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|------------------------------|
+| **LightweightMMM** | Google's Bayesian approach to Marketing Mix Modeling focusing on channel attribution and budget optimization. | [Docs](https://lightweight-mmm.readthedocs.io) • [GitHub](https://github.com/google/lightweight_mmm)       | `pip install lightweight_mmm`  |
 | **PyMC Marketing**| Collection of Bayesian marketing models built with PyMC, including MMM, CLV, and attribution.              | [Docs](https://www.pymc-marketing.io/) • [GitHub](https://github.com/pymc-labs/pymc-marketing)           | `pip install pymc-marketing`      |
 | **MaMiMo**      | Lightweight Python library focused specifically on Marketing Mix Modeling implementation.                  | [GitHub](https://github.com/Garve/mamimo)                                                               | `pip install mamimo`              |
 | **mmm_stan**    | Python/STAN implementation of Bayesian Marketing Mix Models.                                               | [GitHub](https://github.com/sibylhe/mmm_stan)                                                           | GitHub Repository                 |
+| **Lifetimes**    | Analyze customer lifetime value (CLV) using probabilistic models (BG/NBD, Pareto/NBD) to predict purchases. | [Docs](https://lifetimes.readthedocs.io/en/latest/) • [GitHub](https://github.com/CamDavidsonPilon/lifetimes) | `pip install lifetimes`      |
 
 ---
 
@@ -274,6 +306,8 @@ Curated resources for learning econometrics and quantitative economics with Pyth
 | **Machine Learning Specialization (Coursera)** | Beginner-friendly 3-course series by Andrew Ng covering core ML methods (regression, classification, clustering, trees, NN) with hands-on projects. | [Course](https://www.coursera.org/specializations/machine-learning-introduction/) |
 | **Deep Learning Specialization (Coursera)** | Intermediate 5-course series by Andrew Ng covering deep neural networks, CNNs, RNNs, transformers, and real-world DL applications using TensorFlow. | [Course](https://www.coursera.org/specializations/deep-learning) |
 | **Beyond Jupyter (TransferLab)** | Teaches software design principles for ML—modularity, abstraction, and reproducibility—going beyond ad hoc Jupyter workflows. Focus on maintainable, production-quality ML code. | [Website](https://transferlab.ai/trainings/beyond-jupyter/) |
+| **Awesome Quant**    | Curated list of quantitative finance libraries and resources (many statistical/TS tools overlap with econometrics). | [Website](https://wilsonfreitas.github.io/awesome-quant/)                                          |
+| **Awesome Economics**| Curated list of resources for economists, including software, datasets, and learning materials.             | [GitHub](https://github.com/antontarasenko/awesome-economics)                                      |
 
 ---
 

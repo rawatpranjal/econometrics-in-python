@@ -30,7 +30,7 @@ A comprehensive collection of Python packages for econometrics, causal inference
 
 ---
 
-## Core Libraries & Linear Models
+## General Purpose Libraries
 
 Fundamental packages for statistical modeling, regression, and core econometric tasks.
 
@@ -41,7 +41,7 @@ Fundamental packages for statistical modeling, regression, and core econometric 
 
 ---
 
-## Statistical Tests & Inference  <-- NEW SECTION
+## Statistical Tests & Inference
 
 Packages providing functions for classical hypothesis testing, group comparisons, and statistical inference.
 

@@ -9,6 +9,7 @@ A comprehensive collection of Python packages for econometrics, causal inference
 ## Contents
 
 - [Core Libraries & Linear Models](#core-libraries--linear-models)
+- [Statistical Inference & Specialized Methods](#statistical-inference--specialized-methods)
 - [Panel Data & Fixed Effects](#panel-data--fixed-effects)
 - [Instrumental Variables (IV) & GMM](#instrumental-variables-iv--gmm)
 - [Causal Inference & Matching](#causal-inference--matching)
@@ -30,7 +31,7 @@ A comprehensive collection of Python packages for econometrics, causal inference
 
 ---
 
-## General Purpose Libraries
+## Core Libraries & Linear Models
 
 Fundamental packages for statistical modeling, regression, and core econometric tasks.
 
@@ -41,15 +42,17 @@ Fundamental packages for statistical modeling, regression, and core econometric 
 
 ---
 
-## Statistical Tests & Inference
+## Statistical Inference & Specialized Methods
 
-Packages providing functions for classical hypothesis testing, group comparisons, and statistical inference.
+Packages providing functions for classical hypothesis testing, group comparisons, survival/duration analysis, and related statistical inference.
 
-| Package         | Description                                                                                                                               | Links                                                                                                | Installation             |
-|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|--------------------------|
-| **Scipy.stats** | Foundational module within SciPy for a wide range of statistical functions, distributions, and hypothesis tests (t-tests, ANOVA, chi², KS, etc.). | [Docs](https://docs.scipy.org/doc/scipy/reference/stats.html) • [GitHub](https://github.com/scipy/scipy) | `pip install scipy`      |
-| **Statsmodels** | Includes dedicated modules for statistical tests (`stats`), ANOVA (`anova`), nonparametric methods, multiple testing corrections.           | [Docs (stats)](https://www.statsmodels.org/stable/stats.html) • [GitHub](https://github.com/statsmodels/statsmodels) | `pip install statsmodels`  |
-| **Pingouin**    | User-friendly interface for common statistical tests (ANOVA, ANCOVA, t-tests, correlations, chi², reliability) built on pandas & scipy.      | [Docs](https://pingouin-stats.org/) • [GitHub](https://github.com/raphaelvallat/pingouin)             | `pip install pingouin`   |
+| Package         | Description                                                                                                                                       | Links                                                                                                | Installation             |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|--------------------------|
+| **Scipy.stats** | Foundational module within SciPy for a wide range of statistical functions, distributions, and hypothesis tests (t-tests, ANOVA, chi², KS, etc.).     | [Docs](https://docs.scipy.org/doc/scipy/reference/stats.html) • [GitHub](https://github.com/scipy/scipy) | `pip install scipy`      |
+| **Statsmodels** | Includes dedicated modules for statistical tests (`stats`), ANOVA (`anova`), nonparametric methods, multiple testing corrections, contingency tables. | [Docs (stats)](https://www.statsmodels.org/stable/stats.html) • [GitHub](https://github.com/statsmodels/statsmodels) | `pip install statsmodels`  |
+| **Pingouin**    | User-friendly interface for common statistical tests (ANOVA, ANCOVA, t-tests, correlations, chi², reliability) built on pandas & scipy.              | [Docs](https://pingouin-stats.org/) • [GitHub](https://github.com/raphaelvallat/pingouin)             | `pip install pingouin`   |
+| **hypothetical**| Library focused on hypothesis testing: ANOVA/MANOVA, t-tests, chi-square, Fisher's exact, nonparametric tests (Mann-Whitney, Kruskal-Wallis, etc.). | [GitHub](https://github.com/aschleg/hypothetical)                                                     | `pip install hypothetical` |
+| **lifelines**   | Comprehensive library for survival analysis: Kaplan-Meier, Nelson-Aalen, Cox regression, AFT models, handling censored data.                        | [Docs](https://lifelines.readthedocs.io/en/latest/) • [GitHub](https://github.com/CamDavidsonPilon/lifelines) | `pip install lifelines`  |
 
 ---
 

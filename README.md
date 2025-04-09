@@ -41,6 +41,18 @@ Fundamental packages for statistical modeling, regression, and core econometric 
 
 ---
 
+## Statistical Tests & Inference  <-- NEW SECTION
+
+Packages providing functions for classical hypothesis testing, group comparisons, and statistical inference.
+
+| Package         | Description                                                                                                                               | Links                                                                                                | Installation             |
+|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|--------------------------|
+| **Scipy.stats** | Foundational module within SciPy for a wide range of statistical functions, distributions, and hypothesis tests (t-tests, ANOVA, chi², KS, etc.). | [Docs](https://docs.scipy.org/doc/scipy/reference/stats.html) • [GitHub](https://github.com/scipy/scipy) | `pip install scipy`      |
+| **Statsmodels** | Includes dedicated modules for statistical tests (`stats`), ANOVA (`anova`), nonparametric methods, multiple testing corrections.           | [Docs (stats)](https://www.statsmodels.org/stable/stats.html) • [GitHub](https://github.com/statsmodels/statsmodels) | `pip install statsmodels`  |
+| **Pingouin**    | User-friendly interface for common statistical tests (ANOVA, ANCOVA, t-tests, correlations, chi², reliability) built on pandas & scipy.      | [Docs](https://pingouin-stats.org/) • [GitHub](https://github.com/raphaelvallat/pingouin)             | `pip install pingouin`   |
+
+---
+
 ## Panel Data & Fixed Effects
 
 Tools for modeling data with both cross-sectional and time dimensions, including high-dimensional fixed effects.

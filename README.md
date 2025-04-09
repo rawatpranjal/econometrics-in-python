@@ -24,6 +24,7 @@ A comprehensive collection of Python packages for econometrics, causal inference
 - [Bayesian Econometrics](#bayesian-econometrics)
 - [Marketing Mix Models (MMM) & Business Analytics](#marketing-mix-models-mmm--business-analytics)
 - [Spatial Econometrics](#spatial-econometrics)
+- [Dimensionality Reduction](#dimensionality-reduction)
 - [Natural Language Processing for Economics](#natural-language-processing-for-economics)
 - [Synthetic Data Generation](#synthetic-data-generation)
 - [Numerical Optimization & Computational Tools](#numerical-optimization--computational-tools)
@@ -258,6 +259,19 @@ Tools for analyzing data with spatial dependencies or geographic structure.
 |-----------------|------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|-----------------------------|
 | **PySAL (spreg)**| The spatial regression `spreg` module of PySAL. Implements spatial lag, error, IV models, and diagnostics.         | [Docs](https://pysal.org/spreg/) • [GitHub](https://github.com/pysal/spreg)                 | `pip install spreg`         |
 | *(PySAL Core)*  | The broader PySAL ecosystem contains many tools for spatial data handling, weights, visualization, and analysis. | [Docs](https://pysal.org/) • [GitHub](https://github.com/pysal/pysal)                   | `pip install pysal`         |
+
+--
+
+## Dimensionality Reduction
+
+Libraries for reducing the number of variables in a dataset while preserving important information, including linear methods (PCA, Factor Analysis) and non-linear manifold learning techniques (t-SNE, UMAP).
+
+| Package             | Description (Focus)                                                                                                        | Links                                                                                                         | Installation             |
+|---------------------|----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|--------------------------|
+| **Scikit-learn**    | Foundational ML library with various dimensionality reduction methods: PCA, Factor Analysis, Isomap, t-SNE, etc.             | [Docs](https://scikit-learn.org/stable/modules/unsupervised_reduction.html) • [GitHub](https://github.com/scikit-learn/scikit-learn) | `pip install scikit-learn` |
+| **FactorAnalyzer**  | Specialized library for Exploratory (EFA) and Confirmatory (CFA) Factor Analysis with rotation options for interpretability. | [Docs](https://factor-analyzer.readthedocs.io/en/latest/) • [GitHub](https://github.com/EducationalTestingService/factor_analyzer) | `pip install factor_analyzer`|
+| **umap-learn**      | Fast and scalable implementation of Uniform Manifold Approximation and Projection (UMAP) for non-linear reduction.         | [Docs](https://umap-learn.readthedocs.io/en/latest/) • [GitHub](https://github.com/lmcinnes/umap)              | `pip install umap-learn`   |
+| **openTSNE**        | Optimized, parallel implementation of t-distributed Stochastic Neighbor Embedding (t-SNE) for large datasets.             | [Docs](https://opentsne.readthedocs.io/en/stable/) • [GitHub](https://github.com/pavlin-policar/openTSNE)      | `pip install opentsne`   |
 
 ---
 

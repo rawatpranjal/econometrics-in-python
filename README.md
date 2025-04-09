@@ -223,6 +223,7 @@ Packages for analyzing choice behavior, demand estimation, and modeling qualitat
 | **PyLogit**     | Flexible implementation of conditional/multinomial logit models with utilities for data preparation.              | [GitHub](https://github.com/timothyb0912/pylogit)                                               | `pip install pylogit`    |
 | **PyBLP**       | Tools for estimating demand for differentiated products using the Berry-Levinsohn-Pakes (BLP) method.             | [Docs](https://pyblp.readthedocs.io/) • [GitHub](https://github.com/jeffgortmaker/pyblp)         | `pip install pyblp`      |
 | **torch-choice**| PyTorch framework for flexible estimation of complex discrete choice models, leveraging GPU acceleration.           | [Docs](https://gsbdbi.github.io/torch-choice/) • [GitHub](https://github.com/gsbDBI/torch-choice) | `pip install torch-choice`|
+| **Biogeme**         | Maximum likelihood estimation of parametric models, with strong support for complex discrete choice models.     | [Docs](https://biogeme.epfl.ch/index.html) • [GitHub](https://github.com/michelbierlaire/biogeme) | `pip install biogeme`   |
 
 ---
 

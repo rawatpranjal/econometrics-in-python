@@ -13,15 +13,15 @@ A comprehensive collection of Python packages for econometrics, causal inference
 - [Panel Data & Fixed Effects](#panel-data--fixed-effects)
 - [Instrumental Variables (IV) & GMM](#instrumental-variables-iv--gmm)
 - [Causal Inference & Matching](#causal-inference--matching)
-- [Causal Discovery & Graphical Models](#causal-discovery--graphical-models) <-- NEW
+- [Causal Discovery & Graphical Models](#causal-discovery--graphical-models)
 - [Double/Debiased Machine Learning (DML)](#doubledebiased-machine-learning-dml)
 - [Program Evaluation Methods (DiD, SC, RDD)](#program-evaluation-methods-did-sc-rdd)
 - [Time Series Analysis](#time-series-analysis)
 - [Discrete Choice Models](#discrete-choice-models)
-- [Structural Econometrics & Estimation](#structural-econometrics--estimation) <-- NEW
+- [Structural Econometrics & Estimation](#structural-econometrics--estimation)
 - [Quantile Regression & Distributional Methods](#quantile-regression--distributional-methods)
 - [Bayesian Econometrics](#bayesian-econometrics)
-- [Marketing Mix Models (MMM) & Business Analytics](#marketing-mix-models-mmm--business-analytics) <-- Renamed slightly
+- [Marketing Mix Models (MMM) & Business Analytics](#marketing-mix-models-mmm--business-analytics)
 - [Spatial Econometrics](#spatial-econometrics)
 - [Natural Language Processing for Economics](#natural-language-processing-for-economics)
 - [Synthetic Data Generation](#synthetic-data-generation)

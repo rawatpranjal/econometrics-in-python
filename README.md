@@ -19,6 +19,7 @@ A comprehensive collection of Python packages for econometrics, causal inference
 - [Adaptive Experimentation & Bandits](#adaptive-experimentation--bandits)
 - [Time Series Forecasting](#time-series-forecasting)
 - [Time Series Econometrics](#time-series-econometrics)
+- [State Space & Volatility Models](#state-space--volatility-models)
 - [Discrete Choice Models](#discrete-choice-models)
 - [Structural Econometrics & Estimation](#structural-econometrics--estimation)
 - [Quantile Regression & Distributional Methods](#quantile-regression--distributional-methods)
@@ -174,14 +175,28 @@ Packages focused on predicting future values of time series, including classical
 
 ## Time Series Econometrics
 
-Libraries focused on modeling dynamic relationships, causality, volatility, and structural properties in time series data. Includes multivariate models, impulse response analysis, and specialized tests.
+Libraries focused on modeling dynamic relationships, causality, conditional volatility, and structural properties in time series data using methods like VAR, VECM, GARCH, and impulse response analysis.
 
 | Package             | Description (Focus)                                                                                                                   | Links                                                                                                                       | Installation             |
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|--------------------------|
-| **Statsmodels**     | Implements Vector Autoregression (VAR), SVAR, VECM, Dynamic Factor Models (DFM), state-space models, impulse response functions, Granger causality, unit root/cointegration tests. | [Docs (VAR)](https://www.statsmodels.org/stable/vector_ar.html) • [Docs (StateSpace)](https://www.statsmodels.org/stable/statespace.html) • [GitHub](https://github.com/statsmodels/statsmodels) | `pip install statsmodels`  |
-| **ARCH**            | Specialized library for modeling and forecasting volatility (ARCH, GARCH, EGARCH, etc.), including unit root and cointegration tests.     | [Docs](https://arch.readthedocs.io/) • [GitHub](https://github.com/bashtage/arch)                                          | `pip install arch`         |
-| **Metran**          | Specialized package for estimating Dynamic Factor Models (DFM) using state-space methods and Kalman filtering.                          | [GitHub](https://github.com/pastas/metran)                                                                                   | `pip install metran`     |
+| **Statsmodels**     | Implements Vector Autoregression (VAR), SVAR, VECM, impulse response functions, Granger causality tests, unit root/cointegration tests. | [Docs (VAR)](https://www.statsmodels.org/stable/vector_ar.html) • [Docs (Tests)](https://www.statsmodels.org/stable/tsa.html#statistical-tests) • [GitHub](https://github.com/statsmodels/statsmodels) | `pip install statsmodels`  |
+| **ARCH**            | Specialized library for modeling and forecasting conditional volatility using ARCH, GARCH, EGARCH, and related models.                | [Docs](https://arch.readthedocs.io/) • [GitHub](https://github.com/bashtage/arch)                                          | `pip install arch`         |
 | **LocalProjections**| Community implementations of Jordà (2005) Local Projections for estimating impulse responses without VAR assumptions.                 | [Example GitHub](https://github.com/elenev/localprojections)                                                                 | Install from source      |
+
+---
+
+## State Space & Volatility Models
+
+Libraries for representing and estimating models in state-space form (using Kalman filtering/smoothing) and for modeling stochastic volatility.
+
+| Package             | Description (Focus)                                                                                                                | Links                                                                                                                                  | Installation               |
+|---------------------|------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|----------------------------|
+| **Statsmodels**     | Comprehensive state-space modeling framework (`tsa.statespace`) supporting ARIMA, VARMAX, structural time series (UCM), DFM, custom models. | [Docs (StateSpace)](https://www.statsmodels.org/stable/statespace.html) • [GitHub](https://github.com/statsmodels/statsmodels)                 | `pip install statsmodels`    |
+| **stochvol**        | Efficient Bayesian estimation of stochastic volatility (SV) models using MCMC.                                                     | [Docs](https://stochvol.readthedocs.io/en/latest/) • [GitHub](https://github.com/rektory/stochvol)                                        | `pip install stochvol`     |
+| **Metran**          | Specialized package for estimating Dynamic Factor Models (DFM) using state-space methods and Kalman filtering.                       | [GitHub](https://github.com/pastas/metran)                                                                                              | `pip install metran`       |
+| **FilterPy**        | Focuses on Kalman filters (standard, EKF, UKF) and smoothers with a clear, pedagogical implementation style.                       | [Docs](https://filterpy.readthedocs.io/en/latest/) • [GitHub](https://github.com/rlabbe/filterpy)                                       | `pip install filterpy`     |
+| **PyKalman**        | Implements Kalman filter, smoother, and EM algorithm for parameter estimation, including support for missing values and UKF.         | [PyPI](https://pypi.org/project/pykalman/) • [GitHub](https://github.com/pykalman/pykalman)                                               | `pip install pykalman`     |
+| **PyMC Statespace** | (See Bayesian) Bayesian state-space modeling using PyMC, integrating Kalman filtering within MCMC for parameter estimation.          | [Docs](https://pymc-statespace.readthedocs.io/en/latest/) • [GitHub](https://github.com/pymc-devs/pymc-statespace) (Note: Check repo status) | `pip install pymc-statespace`|
 
 ---
 

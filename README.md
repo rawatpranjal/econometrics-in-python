@@ -16,6 +16,7 @@ A comprehensive collection of Python packages for econometrics, causal inference
 - [Causal Discovery & Graphical Models](#causal-discovery--graphical-models)
 - [Double/Debiased Machine Learning (DML)](#doubledebiased-machine-learning-dml)
 - [Program Evaluation Methods (DiD, SC, RDD)](#program-evaluation-methods-did-sc-rdd)
+- [Adaptive Experimentation & Bandits](#adaptive-experimentation--bandits)
 - [Time Series Analysis](#time-series-analysis)
 - [Discrete Choice Models](#discrete-choice-models)
 - [Structural Econometrics & Estimation](#structural-econometrics--estimation)
@@ -135,6 +136,21 @@ Quasi-experimental methods for estimating causal effects from policy changes or 
 | **rdrobust**                | Comprehensive tools for Regression Discontinuity Designs (RDD), including optimal bandwidth selection, estimation, inference. | [GitHub](https://github.com/rdpackages/rdrobust) • [PyPI](https://pypi.org/project/rdrobust/) | `pip install rdrobust`            |
 | **rdd**                     | Toolkit for sharp RDD analysis, including bandwidth calculation and estimation, integrating with pandas.                 | [GitHub](https://github.com/evan-magnusson/rdd)                                         | `pip install rdd`                 |
 | **CausalImpact** | Python port of Google's R package for estimating causal effects of interventions on time series using Bayesian structural time-series models. | [Docs](https://google.github.io/CausalImpact/CausalImpact/CausalImpact.html) (R) • [GitHub (Py)](https://github.com/tcassou/causal_impact) | `pip install causalimpact` |
+
+---
+
+## Adaptive Experimentation & Bandits
+
+Libraries for designing and evaluating adaptive experiments using multi-armed bandit (MAB) algorithms, covering stochastic, contextual, and more complex bandit settings.
+
+| Package                     | Description (Focus)                                                                                                     | Links                                                                                                      | Installation              |
+|-----------------------------|-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|---------------------------|
+| **SMPyBandits**             | Comprehensive research framework for single/multi-player MAB algorithms (stochastic, adversarial, contextual).            | [Docs](https://smpybandits.github.io/) • [GitHub](https://github.com/SMPyBandits/SMPyBandits)                  | `pip install SMPyBandits` |
+| **MABWiser**                | Production-ready, scikit-learn style library for contextual & stochastic bandits with parallelism and simulation tools.   | [Docs](https://fidelity.github.io/mabwiser/) • [GitHub](https://github.com/fidelity/mabwiser)              | `pip install mabwiser`    |
+| **ContextualBandits**       | Implements a wide range of contextual bandit algorithms (linear, tree-based, neural) and off-policy evaluation methods. | [Docs](https://contextual-bandits.readthedocs.io/) • [GitHub](https://github.com/david-cortes/contextualbandits) | `pip install contextualbandits` |
+| **BayesianBandits**         | Lightweight microframework for Bayesian bandits (Thompson Sampling) with support for contextual/restless/delayed rewards. | [Docs](https://rukulkarni.com/projects/bayesianbandits/) • [GitHub](https://github.com/IntelyCare/bayesianbandits) | `pip install bayesianbandits` |
+| **Open Bandit Pipeline (OBP)**| Framework for **offline evaluation (OPE)** of bandit policies using logged data. Implements IPS, DR, DM estimators.      | [Docs](https://zr-obp.readthedocs.io/en/latest/) • [GitHub](https://github.com/st-tech/zr-obp)           | `pip install obp`         |
+| **PyXAB**                   | Library for advanced bandit problems: X-armed bandits (continuous/structured action spaces) and online optimization.    | [Docs](https://pyxab.readthedocs.io/en/latest/) • [GitHub](https://github.com/huanzhang12/pyxab)             | `pip install pyxab`       |
 
 ---
 

@@ -17,7 +17,8 @@ A comprehensive collection of Python packages for econometrics, causal inference
 - [Double/Debiased Machine Learning (DML)](#doubledebiased-machine-learning-dml)
 - [Program Evaluation Methods (DiD, SC, RDD)](#program-evaluation-methods-did-sc-rdd)
 - [Adaptive Experimentation & Bandits](#adaptive-experimentation--bandits)
-- [Time Series Analysis](#time-series-analysis)
+- [Time Series Forecasting](#time-series-forecasting)
+- [Time Series Econometrics](#time-series-econometrics)
 - [Discrete Choice Models](#discrete-choice-models)
 - [Structural Econometrics & Estimation](#structural-econometrics--estimation)
 - [Quantile Regression & Distributional Methods](#quantile-regression--distributional-methods)
@@ -155,19 +156,32 @@ Libraries for designing and evaluating adaptive experiments using multi-armed ba
 
 ---
 
-## Time Series Analysis
+## Time Series Forecasting
 
-Packages specialized in analyzing time-ordered data, including forecasting and volatility modeling.
+Packages focused on predicting future values of time series, including classical models, machine learning approaches, and specialized forecasting frameworks.
 
 | Package          | Description                                                                                                             | Links                                                                             | Installation           |
 |------------------|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|------------------------|
-| **Statsmodels**  | Core library for classical time series models (ARIMA, VAR, VARMA, State Space, Exponential Smoothing).                  | [Docs](https://www.statsmodels.org/stable/tsa.html) • [GitHub](https://github.com/statsmodels/statsmodels) | `pip install statsmodels`|
-| **ARCH**         | Specialized library for volatility modeling (ARCH, GARCH, etc.), unit root tests, cointegration, financial econometrics. | [Docs](https://arch.readthedocs.io/) • [GitHub](https://github.com/bashtage/arch)      | `pip install arch`     |
+| **Statsmodels**  | Core implementations of classical forecasting models like ARIMA, SARIMAX, Exponential Smoothing (ETS), Unobserved Components (UCM). | [Docs (TSA)](https://www.statsmodels.org/stable/tsa.html) • [GitHub](https://github.com/statsmodels/statsmodels) | `pip install statsmodels`|
 | **pmdarima**     | ARIMA modeling with automatic parameter selection (auto-ARIMA), similar to R's `forecast::auto.arima`.                  | [Docs](https://alkaline-ml.com/pmdarima/) • [GitHub](https://github.com/alkaline-ml/pmdarima) | `pip install pmdarima` |
 | **Prophet**      | Forecasting procedure for time series with strong seasonality and trend components, developed by Facebook.                | [Docs](https://facebook.github.io/prophet/) • [GitHub](https://github.com/facebook/prophet) | `pip install prophet`  |
-| **StatsForecast**| Fast implementation of popular statistical forecasting models (ETS, ARIMA, Theta) optimized for performance.            | [Docs](https://nixtla.github.io/statsforecast/) • [GitHub](https://github.com/Nixtla/statsforecast) | `pip install statsforecast`|
-| **MLForecast**   | Uses machine learning models (e.g., LightGBM, XGBoost) for scalable time series forecasting tasks.                        | [Docs](https://nixtla.github.io/mlforecast/) • [GitHub](https://github.com/Nixtla/mlforecast) | `pip install mlforecast` |
-| **NeuralForecast**| Deep learning models (N-BEATS, N-HiTS, RNNs) for time series forecasting, built on PyTorch Lightning.                  | [Docs](https://nixtla.github.io/neuralforecast/) • [GitHub](https://github.com/Nixtla/neuralforecast) | `pip install neuralforecast`|
+| **StatsForecast**| Fast, scalable implementations of popular statistical forecasting models (ETS, ARIMA, Theta, etc.) optimized for performance. | [Docs](https://nixtla.github.io/statsforecast/) • [GitHub](https://github.com/Nixtla/statsforecast) | `pip install statsforecast`|
+| **MLForecast**   | Scalable time series forecasting using machine learning models (e.g., LightGBM, XGBoost) as regressors.                  | [Docs](https://nixtla.github.io/mlforecast/) • [GitHub](https://github.com/Nixtla/mlforecast) | `pip install mlforecast` |
+| **NeuralForecast**| Deep learning models (N-BEATS, N-HiTS, Transformers, RNNs) for time series forecasting, built on PyTorch Lightning.     | [Docs](https://nixtla.github.io/neuralforecast/) • [GitHub](https://github.com/Nixtla/neuralforecast) | `pip install neuralforecast`|
+| **sktime**       | Unified framework for various time series tasks, including forecasting with classical, ML, and deep learning models.       | [Docs](https://www.sktime.net/en/latest/) • [GitHub](https://github.com/sktime/sktime) | `pip install sktime`     |
+
+---
+
+## Time Series Econometrics
+
+Libraries focused on modeling dynamic relationships, causality, volatility, and structural properties in time series data. Includes multivariate models, impulse response analysis, and specialized tests.
+
+| Package             | Description (Focus)                                                                                                                   | Links                                                                                                                       | Installation             |
+|---------------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|--------------------------|
+| **Statsmodels**     | Implements Vector Autoregression (VAR), SVAR, VECM, Dynamic Factor Models (DFM), state-space models, impulse response functions, Granger causality, unit root/cointegration tests. | [Docs (VAR)](https://www.statsmodels.org/stable/vector_ar.html) • [Docs (StateSpace)](https://www.statsmodels.org/stable/statespace.html) • [GitHub](https://github.com/statsmodels/statsmodels) | `pip install statsmodels`  |
+| **ARCH**            | Specialized library for modeling and forecasting volatility (ARCH, GARCH, EGARCH, etc.), including unit root and cointegration tests.     | [Docs](https://arch.readthedocs.io/) • [GitHub](https://github.com/bashtage/arch)                                          | `pip install arch`         |
+| **Metran**          | Specialized package for estimating Dynamic Factor Models (DFM) using state-space methods and Kalman filtering.                          | [GitHub](https://github.com/pastas/metran)                                                                                   | `pip install metran`     |
+| **LocalProjections**| Community implementations of Jordà (2005) Local Projections for estimating impulse responses without VAR assumptions.                 | [Example GitHub](https://github.com/elenev/localprojections)                                                                 | Install from source      |
 
 ---
 
@@ -260,7 +274,7 @@ Tools for analyzing data with spatial dependencies or geographic structure.
 | **PySAL (spreg)**| The spatial regression `spreg` module of PySAL. Implements spatial lag, error, IV models, and diagnostics.         | [Docs](https://pysal.org/spreg/) • [GitHub](https://github.com/pysal/spreg)                 | `pip install spreg`         |
 | *(PySAL Core)*  | The broader PySAL ecosystem contains many tools for spatial data handling, weights, visualization, and analysis. | [Docs](https://pysal.org/) • [GitHub](https://github.com/pysal/pysal)                   | `pip install pysal`         |
 
---
+---
 
 ## Dimensionality Reduction
 

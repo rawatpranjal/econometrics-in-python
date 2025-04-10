@@ -9,7 +9,8 @@ A comprehensive collection of Python packages for econometrics, causal inference
 ## Contents
 
 - [Core Libraries & Linear Models](#core-libraries--linear-models)
-- [Statistical Inference & Specialized Methods](#statistical-inference--specialized-methods)
+- [Statistical Inference & Hypothesis Testing](#statistical-inference--hypothesis-testing)
+- [Power Simulation & Design of Experiments](#power-simulation--design-of-experiments) 
 - [Panel Data & Fixed Effects](#panel-data--fixed-effects)
 - [Instrumental Variables (IV) & GMM](#instrumental-variables-iv--gmm)
 - [Causal Inference & Matching](#causal-inference--matching)
@@ -47,7 +48,7 @@ Fundamental packages for statistical modeling, regression, and core econometric 
 
 ---
 
-## Statistical Inference & Specialized Methods
+## Statistical Inference & Hypothesis Testing
 
 Packages providing functions for classical hypothesis testing, group comparisons, survival/duration analysis, and related statistical inference.
 
@@ -58,6 +59,20 @@ Packages providing functions for classical hypothesis testing, group comparisons
 | **Pingouin**    | User-friendly interface for common statistical tests (ANOVA, ANCOVA, t-tests, correlations, chi², reliability) built on pandas & scipy.              | [Docs](https://pingouin-stats.org/) • [GitHub](https://github.com/raphaelvallat/pingouin)             | `pip install pingouin`   |
 | **hypothetical**| Library focused on hypothesis testing: ANOVA/MANOVA, t-tests, chi-square, Fisher's exact, nonparametric tests (Mann-Whitney, Kruskal-Wallis, etc.). | [GitHub](https://github.com/aschleg/hypothetical)                                                     | `pip install hypothetical` |
 | **lifelines**   | Comprehensive library for survival analysis: Kaplan-Meier, Nelson-Aalen, Cox regression, AFT models, handling censored data.                        | [Docs](https://lifelines.readthedocs.io/en/latest/) • [GitHub](https://github.com/CamDavidsonPilon/lifelines) | `pip install lifelines`  |
+
+--
+
+## Power Simulation & Design of Experiments
+
+Tools for calculating statistical power, determining sample sizes, generating experimental designs (DoE), and implementing adaptive experimentation methods.
+
+| Package             | Description (Focus)                                                                                                          | Links                                                                                             | Installation           |
+|---------------------|------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|------------------------|
+| **Statsmodels**     | Includes `stats.power` module for power/sample size calculations for t-tests, F-tests, Z-tests, Chi-squared tests.           | [Docs (Power)](https://www.statsmodels.org/stable/stats.html#power-and-sample-size-calculations) • [GitHub](https://github.com/statsmodels/statsmodels) | `pip install statsmodels`|
+| **pyDOE2**          | Implements classical Design of Experiments: factorial (full/fractional), response surface (Box-Behnken, CCD), Latin Hypercube. | [Docs](https://pythonhosted.org/pyDOE2/) • [GitHub](https://github.com/clicumu/pyDOE2)                 | `pip install pyDOE2`   |
+| **DoEgen**          | Automates generation and optimization of designs, especially for mixed factor-level experiments; computes efficiency metrics. | [GitHub](https://github.com/sebhaan/DoEgen)                                                        | `pip install DoEgen`   |
+| **ADOpy**           | Bayesian Adaptive Design Optimization (ADO) for tuning experiments in real-time, with models for psychometric tasks.           | [Docs](https://adopy.readthedocs.io/en/latest/) • [GitHub](https://github.com/adopy/adopy)             | `pip install adopy`    |
+| **Adaptive**        | Parallel active learning library for adaptive function sampling/evaluation, with live plotting for monitoring.               | [Docs](https://adaptive.readthedocs.io/en/latest/) • [GitHub](https://github.com/python-adaptive/adaptive) | `pip install adaptive` |
 
 ---
 
@@ -182,6 +197,7 @@ Libraries focused on modeling dynamic relationships, causality, conditional vola
 | **Statsmodels**     | Implements Vector Autoregression (VAR), SVAR, VECM, impulse response functions, Granger causality tests, unit root/cointegration tests. | [Docs (VAR)](https://www.statsmodels.org/stable/vector_ar.html) • [Docs (Tests)](https://www.statsmodels.org/stable/tsa.html#statistical-tests) • [GitHub](https://github.com/statsmodels/statsmodels) | `pip install statsmodels`  |
 | **ARCH**            | Specialized library for modeling and forecasting conditional volatility using ARCH, GARCH, EGARCH, and related models.                | [Docs](https://arch.readthedocs.io/) • [GitHub](https://github.com/bashtage/arch)                                          | `pip install arch`         |
 | **LocalProjections**| Community implementations of Jordà (2005) Local Projections for estimating impulse responses without VAR assumptions.                 | [Example GitHub](https://github.com/elenev/localprojections)                                                                 | Install from source      |
+| **Kats**            | Broad toolkit for time series analysis, including multivariate analysis, detection (outliers, change points, trends), feature extraction. | [Docs](https://facebookresearch.github.io/Kats/) • [GitHub](https://github.com/facebookresearch/Kats)                      | `pip install kats`       |
 
 ---
 
@@ -346,9 +362,6 @@ Tools for improving code quality, performance, reproducibility, and implementing
 | Package        | Description                                                                                                | Links                                                                                           | Installation              |
 |----------------|------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------|
 | **wildboottest**| Fast implementation of various wild cluster bootstrap algorithms (WCR, WCU) for robust inference.          | [Docs](https://py-econometrics.github.io/wildboottest/) • [GitHub](https://github.com/py-econometrics/wildboottest) | `pip install wildboottest`|
-| **appelpy**     | Applied econometrics library aiming for Stata-like syntax simplicity with Python's object-oriented power. | [GitHub](https://github.com/mfarragher/appelpy)                                                 | `pip install appelpy`     |
-| **TQDM**        | Fast, extensible progress bar for loops and long-running operations.                                     | [Docs](https://tqdm.github.io/) • [GitHub](https://github.com/tqdm/tqdm)                           | `pip install tqdm`        |
-| **Pylint**      | Code analysis tool for identifying errors, enforcing coding standards, and improving code quality.       | [Docs](https://pylint.pycqa.org/) • [GitHub](https://github.com/PyCQA/pylint)                     | `pip install pylint`      |
 
 ---
 

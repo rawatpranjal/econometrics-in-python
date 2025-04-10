@@ -18,6 +18,7 @@ A comprehensive collection of Python packages for econometrics, causal inference
 - [Double/Debiased Machine Learning (DML)](#doubledebiased-machine-learning-dml)
 - [Program Evaluation Methods (DiD, SC, RDD)](#program-evaluation-methods-did-sc-rdd)
 - [Adaptive Experimentation & Bandits](#adaptive-experimentation--bandits)
+- [Tree & Ensemble Methods for Prediction](#tree--ensemble-methods-for-prediction)
 - [Time Series Forecasting](#time-series-forecasting)
 - [Time Series Econometrics](#time-series-econometrics)
 - [State Space & Volatility Models](#state-space--volatility-models)
@@ -169,6 +170,23 @@ Libraries for designing and evaluating adaptive experiments using multi-armed ba
 | **BayesianBandits**         | Lightweight microframework for Bayesian bandits (Thompson Sampling) with support for contextual/restless/delayed rewards. | [Docs](https://rukulkarni.com/projects/bayesianbandits/) • [GitHub](https://github.com/IntelyCare/bayesianbandits) | `pip install bayesianbandits` |
 | **Open Bandit Pipeline (OBP)**| Framework for **offline evaluation (OPE)** of bandit policies using logged data. Implements IPS, DR, DM estimators.      | [Docs](https://zr-obp.readthedocs.io/en/latest/) • [GitHub](https://github.com/st-tech/zr-obp)           | `pip install obp`         |
 | **PyXAB**                   | Library for advanced bandit problems: X-armed bandits (continuous/structured action spaces) and online optimization.    | [Docs](https://pyxab.readthedocs.io/en/latest/) • [GitHub](https://github.com/huanzhang12/pyxab)             | `pip install pyxab`       |
+
+---
+
+## Tree & Ensemble Methods for Prediction
+
+Powerful machine learning techniques like Random Forests and Gradient Boosting, often used for prediction, feature importance, and handling complex non-linear relationships. This section covers leading packages for both types of ensemble methods.
+
+| Package               | Description                                                                                                                              | Links                                                                                                | Installation                             |
+|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|------------------------------------------|
+| **Scikit-learn Ens.** | (`RandomForestClassifier`/`Regressor`) Widely-used, versatile implementation of Random Forests. Easy API and parallel processing support. | [Docs](https://scikit-learn.org/stable/modules/ensemble.html#random-forests) • [GitHub](https://github.com/scikit-learn/scikit-learn) | `pip install scikit-learn`               |
+| **cuML (RAPIDS)**     | GPU-accelerated implementation of Random Forests for significant speedups on large datasets. Scikit-learn compatible API.                 | [Docs](https://docs.rapids.ai/api/cuml/stable/) • [GitHub](https://github.com/rapidsai/cuml)             | `conda install ...` (See RAPIDS docs) |
+| **XGBoost**           | High-performance, optimized gradient boosting library (also supports RF). Known for speed, efficiency, and winning competitions.            | [Docs](https://xgboost.readthedocs.io/) • [GitHub](https://github.com/dmlc/xgboost)                    | `pip install xgboost`                    |
+| **LightGBM**          | Fast, distributed gradient boosting (also supports RF). Known for speed, low memory usage, and handling large datasets.                   | [Docs](https://lightgbm.readthedocs.io/) • [GitHub](https://github.com/microsoft/LightGBM)           | `pip install lightgbm`                   |
+| **CatBoost**          | Gradient boosting library excelling with categorical features (minimal preprocessing needed). Robust against overfitting.                  | [Docs](https://catboost.ai/docs/) • [GitHub](https://github.com/catboost/catboost)                     | `pip install catboost`                   |
+| **NGBoost**           | Extends gradient boosting to probabilistic prediction, providing uncertainty estimates alongside point predictions. Built on scikit-learn.   | [Docs](https://stanfordmlgroup.github.io/ngboost/) • [GitHub](https://github.com/stanfordmlgroup/ngboost) | `pip install ngboost`                    |
+
+*(Note: Scikit-learn also provides GradientBoostingClassifier/Regressor. XGBoost and LightGBM are primarily Gradient Boosting but offer Random Forest modes.)*
 
 ---
 

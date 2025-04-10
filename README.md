@@ -28,10 +28,10 @@ A comprehensive collection of Python packages for econometrics, causal inference
 - [Marketing Mix Models (MMM) & Business Analytics](#marketing-mix-models-mmm--business-analytics)
 - [Spatial Econometrics](#spatial-econometrics)
 - [Dimensionality Reduction](#dimensionality-reduction)
-- [Natural Language Processing for Economics](#natural-language-processing-for-economics)
+- [Natural Language Processing Tools](#natural-language-processing-tools)
 - [Synthetic Data Generation](#synthetic-data-generation)
 - [Numerical Optimization & Computational Tools](#numerical-optimization--computational-tools)
-- [Utilities & Econometric Infrastructure](#utilities--econometric-infrastructure)
+- [Utilities](#utilities)
 - [Learning Resources](#learning-resources)
 - [Contributing](#contributing)
 

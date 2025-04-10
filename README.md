@@ -31,7 +31,7 @@ A comprehensive collection of Python packages for econometrics, causal inference
 - [Natural Language Processing Tools](#natural-language-processing-tools)
 - [Synthetic Data Generation](#synthetic-data-generation)
 - [Numerical Optimization & Computational Tools](#numerical-optimization--computational-tools)
-- [Utilities](#utilities)
+- [Standard Errors, Bootstrapping & Reporting](#standard-errors-bootstrapping--reporting)
 - [Learning Resources](#learning-resources)
 - [Contributing](#contributing)
 
@@ -355,13 +355,16 @@ Foundational libraries for numerical computation, automatic differentiation, and
 
 ---
 
-## Utilities & Econometric Infrastructure
+## Standard Errors, Bootstrapping & Reporting
 
-Tools for improving code quality, performance, reproducibility, and implementing specific econometric procedures.
+Tools for robust statistical inference (corrected standard errors, bootstrapping) and creating publication-quality regression tables.
 
-| Package        | Description                                                                                                | Links                                                                                           | Installation              |
-|----------------|------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------|
-| **wildboottest**| Fast implementation of various wild cluster bootstrap algorithms (WCR, WCU) for robust inference.          | [Docs](https://py-econometrics.github.io/wildboottest/) • [GitHub](https://github.com/py-econometrics/wildboottest) | `pip install wildboottest`|
+| Package                 | Description (Focus)                                                                                                                        | Links                                                                                                                       | Installation                 |
+|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|------------------------------|
+| **Statsmodels**         | Core library for estimating robust standard errors (HC0-HC3, HAC, Clustered) via `get_robustcov_results`. Provides building blocks for manual bootstrap. | [Docs (Robust SE)](https://www.statsmodels.org/stable/regression.html#robust-standard-errors) • [GitHub](https://github.com/statsmodels/statsmodels) | `pip install statsmodels`      |
+| **wildboottest**        | Fast implementation of various wild cluster bootstrap algorithms (WCR, WCU) for robust inference, especially with few clusters.                | [Docs](https://py-econometrics.github.io/wildboottest/) • [GitHub](https://github.com/py-econometrics/wildboottest)             | `pip install wildboottest`     |
+| **SciPy Bootstrap**     | (`scipy.stats.bootstrap`) Computes bootstrap confidence intervals for various statistics using percentile, BCa methods.                      | [Docs](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html) • [GitHub (SciPy)](https://github.com/scipy/scipy) | `pip install scipy`          |
+| **Stargazer**           | Python port of R's stargazer for creating publication-quality regression tables (HTML, LaTeX) from `statsmodels` & `linearmodels` results.   | [GitHub](https://github.com/StatsReporting/stargazer)                                                                        | `pip install stargazer`      |
 
 ---
 

@@ -327,7 +327,7 @@ Libraries for processing and analyzing textual data within economic contexts.
 
 | Package                    | Description                                                                                                        | Links                                                                                       | Installation                |
 |----------------------------|--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|-----------------------------|
-| **Hugging Face Transformers**| Access to thousands of pre-trained models for NLP tasks like text classification, summarization, embeddings, etc. | [Docs](https://huggingface.co/transformers/) • [GitHub](https://github.com/huggingface/transformers) | `pip install transformers`  |
+| **Transformers**| Access to thousands of pre-trained models for NLP tasks like text classification, summarization, embeddings, etc. | [Docs](https://huggingface.co/transformers/) • [GitHub](https://github.com/huggingface/transformers) | `pip install transformers`  |
 | **Gensim**                 | Library focused on topic modeling (LDA, LSI) and document similarity analysis.                                     | [Docs](https://radimrehurek.com/gensim/) • [GitHub](https://github.com/RaRe-Technologies/gensim) | `pip install gensim`        |
 | **spaCy**                  | Industrial-strength NLP library for efficient text processing pipelines (NER, POS tagging, etc.).                  | [Docs](https://spacy.io/) • [GitHub](https://github.com/explosion/spaCy)                       | `pip install spacy`         |
 

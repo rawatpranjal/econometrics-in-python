@@ -373,14 +373,13 @@ Curated resources for learning econometrics and quantitative economics with Pyth
 |------------------------------|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | **QuantEcon Lectures**       | High-quality lecture series on quantitative economic modeling, computational tools, and economics using Python/Julia. | [Website](https://quantecon.org/lectures/)                                                |
 | **Python for Econometrics**  | Comprehensive intro notes by Kevin Sheppard covering Python basics, core libraries, and econometrics applications. | [PDF](https://www.kevinsheppard.com/files/teaching/python/notes/python_introduction_2023.pdf) |
-| **Python Causality Handbook**| Modern introduction to causal inference methods (DiD, IV, RDD, Synth, ML-based) with Python code examples.       | [Website](https://matheusfacure.github.io/python-causality-handbook/)                     |
+| **Causal Inference for the Brave and True**| Modern introduction to causal inference methods (DiD, IV, RDD, Synth, ML-based) with Python code examples.       | [Website](https://matheusfacure.github.io/python-causality-handbook/)                     |
 | **Coding for Economists**    | Practical guide by A. Turrell on using Python for modern econometric research, data analysis, and workflows.      | [Website](https://aeturrell.github.io/coding-for-economists/)                             |
 | **The Missing Semester of Your CS Education (MIT)** | Teaches essential developer tools often skipped in formal education—command line, Git, Vim, scripting, debugging, etc. | [Website](https://missing.csail.mit.edu/) |
 | **Machine Learning Specialization (Coursera)** | Beginner-friendly 3-course series by Andrew Ng covering core ML methods (regression, classification, clustering, trees, NN) with hands-on projects. | [Course](https://www.coursera.org/specializations/machine-learning-introduction/) |
 | **Deep Learning Specialization (Coursera)** | Intermediate 5-course series by Andrew Ng covering deep neural networks, CNNs, RNNs, transformers, and real-world DL applications using TensorFlow. | [Course](https://www.coursera.org/specializations/deep-learning) |
 | **Beyond Jupyter (TransferLab)** | Teaches software design principles for ML—modularity, abstraction, and reproducibility—going beyond ad hoc Jupyter workflows. Focus on maintainable, production-quality ML code. | [Website](https://transferlab.ai/trainings/beyond-jupyter/) |
 | **Awesome Quant**    | Curated list of quantitative finance libraries and resources (many statistical/TS tools overlap with econometrics). | [Website](https://wilsonfreitas.github.io/awesome-quant/)                                          |
-| **Awesome Economics**| Curated list of resources for economists, including software, datasets, and learning materials.             | [GitHub](https://github.com/antontarasenko/awesome-economics)                                      |
 
 ---
 

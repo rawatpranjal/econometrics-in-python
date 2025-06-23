@@ -60,6 +60,7 @@ Packages providing functions for classical hypothesis testing, group comparisons
 | **Pingouin**    | User-friendly interface for common statistical tests (ANOVA, ANCOVA, t-tests, correlations, chi², reliability) built on pandas & scipy.              | [Docs](https://pingouin-stats.org/) • [GitHub](https://github.com/raphaelvallat/pingouin)             | `pip install pingouin`   |
 | **hypothetical**| Library focused on hypothesis testing: ANOVA/MANOVA, t-tests, chi-square, Fisher's exact, nonparametric tests (Mann-Whitney, Kruskal-Wallis, etc.). | [GitHub](https://github.com/aschleg/hypothetical)                                                     | `pip install hypothetical` |
 | **lifelines**   | Comprehensive library for survival analysis: Kaplan-Meier, Nelson-Aalen, Cox regression, AFT models, handling censored data.                        | [Docs](https://lifelines.readthedocs.io/en/latest/) • [GitHub](https://github.com/CamDavidsonPilon/lifelines) | `pip install lifelines`  |
+| **PyWhy-Stats**    | Part of the PyWhy ecosystem providing statistical methods specifically for causal applications, including various independence tests and power-divergence methods. | [Docs](https://pywhy-stats.readthedocs.io/) • [GitHub](https://github.com/py-why/pywhy-stats) | `pip install pywhy-stats` |
 
 ---
 
@@ -115,6 +116,9 @@ Tools for estimating causal effects using observational data, focusing on matchi
 | **CausalMatch**    | Implements Propensity Score Matching (PSM) and Coarsened Exact Matching (CEM) with ML flexibility for propensity score estimation. | [Docs & GitHub](https://github.com/bytedance/CausalMatch)                             | `pip install causalmatch` |
 | **fastmatch**      | Fast k-nearest-neighbor matching for large datasets using Facebook's FAISS library.                                                  | [Docs & GitHub](https://github.com/py-econometrics/fastmatch)                         | `pip install fastmatch`   |
 | **scikit-uplift**| Focuses on uplift modeling and estimating heterogeneous treatment effects using various ML-based methods. | [Docs](https://scikit-uplift.readthedocs.io/en/latest/) • [GitHub](https://github.com/maks-sh/scikit-uplift) | `pip install scikit-uplift`|
+| **CausalPy**       | Developed by PyMC Labs, focuses specifically on causal inference in quasi-experimental settings. Specializes in scenarios where randomization is impossible or expensive. | [Docs](https://www.pymc-marketing.io/) • [GitHub](https://github.com/pymc-labs/pymc-marketing) | `pip install CausalPy`    |
+| **CausalLib**      | IBM-developed package that provides a scikit-learn-inspired API for causal inference with meta-algorithms supporting arbitrary machine learning models. | [Docs](https://causallib.readthedocs.io/) • [GitHub](https://github.com/IBM/causallib) | `pip install causallib`   |
+| **CausalPlayground** | Python library for causal research that addresses the scarcity of real-world datasets with known causal relations. Provides fine-grained control over structural causal models. | [Docs](https://causal-playground.readthedocs.io/) • [GitHub](https://github.com/causal-playground/causal-playground) | `pip install causal-playground` |
 
 ---
 
@@ -128,6 +132,11 @@ Libraries focused on learning causal structures (DAGs, Bayesian Networks) from d
 | **CausalNex**                       | Uses Bayesian Networks for causal reasoning, combining ML with expert knowledge to model relationships. | [GitHub](https://github.com/microsoft/causalnex)                                                  | `pip install causalnex`     |
 | **Causal Discovery Toolbox (CDT)**  | Implements algorithms for causal discovery (recovering causal graph structure) from observational data.   | [Docs](https://fentechsolutions.github.io/CausalDiscoveryToolbox/html/index.html) • [GitHub](https://github.com/FenTechSolutions/CausalDiscoveryToolbox) | `pip install cdt`           |
 | **DoWhy**                           | (See Causal Inference) Includes functionality for modeling assumptions with causal graphs (DAGs).         | [Docs](https://www.pywhy.org/dowhy/) • [GitHub](https://github.com/py-why/dowhy)                | `pip install dowhy`       |
+| **Tigramite**      | Specialized package for causal inference in time series data implementing PCMCI, PCMCIplus, LPCMCI algorithms with conditional independence tests. | [Docs](https://tigramite.readthedocs.io/) • [GitHub](https://github.com/jakobrunge/tigramite) | `pip install tigramite`   |
+| **gCastle**        | Huawei Noah's Ark Lab end-to-end causal structure learning toolchain emphasizing gradient-based methods with GPU acceleration (NOTEARS, GOLEM). | [Docs](https://gcastle.readthedocs.io/) • [GitHub](https://github.com/huawei-noah/trustworthyAI) | `pip install gcastle`     |
+| **causal-learn**   | Comprehensive Python package serving as Python translation and extension of Java-based Tetrad toolkit for causal discovery algorithms. | [Docs](https://causal-learn.readthedocs.io/) • [GitHub](https://github.com/py-why/causal-learn) | `pip install causal-learn` |
+| **LiNGAM**         | Specialized package for learning non-Gaussian linear causal models, implementing various versions of the LiNGAM algorithm including ICA-based methods. | [Docs](https://lingam.readthedocs.io/) • [GitHub](https://github.com/cdt15/lingam) | `pip install lingam`      |
+| **py-tetrad**      | Python interface to Tetrad Java library using JPype, providing direct access to Tetrad's causal discovery algorithms with efficient data translation. | [GitHub](https://github.com/py-why/py-tetrad) | Available on GitHub (installation via git clone) |
 
 ---
 
@@ -411,4 +420,4 @@ Contributions are welcome! Please refer to the `CONTRIBUTING.md` file (linked vi
 2.  **Improve documentation**: Help enhance descriptions, add examples, or correct errors.
 3.  **Report issues**: Notify us about broken links, outdated information, or suggest new categories.
 
-*Last updated: April 2025*
+*Last updated: June 2025*

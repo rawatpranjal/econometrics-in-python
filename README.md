@@ -148,6 +148,8 @@ Methods combining machine learning and econometrics for robust causal inference 
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|---------------------|
 | **DoubleML** | Implements the double/debiased ML framework (Chernozhukov et al.) for estimating causal parameters (ATE, LATE, POM) with ML nuisances. | [Docs](https://docs.doubleml.org/) • [GitHub](https://github.com/DoubleML/doubleml-for-py) | `pip install DoubleML`|
 | **EconML**   | Microsoft toolkit for estimating heterogeneous treatment effects using DML, causal forests, meta-learners, and orthogonal ML methods.  | [Docs](https://econml.azurewebsites.net/) • [GitHub](https://github.com/py-why/EconML)     | `pip install econml`  |
+| **pydoublelasso** | Double‑post Lasso estimator for high‑dimensional treatment effects (Belloni‑Chernozhukov‑Hansen 2014). | [PyPI](https://pypi.org/project/pydoublelasso/) | `pip install pydoublelasso` |
+| **pyhtelasso**    | Debiased‑Lasso detector of heterogeneous treatment effects in randomized experiments. | [PyPI](https://pypi.org/project/pyhtelasso/) | `pip install pyhtelasso` |
 
 ---
 
@@ -164,6 +166,8 @@ Quasi-experimental methods for estimating causal effects from policy changes or 
 | **rdrobust**                | Comprehensive tools for Regression Discontinuity Designs (RDD), including optimal bandwidth selection, estimation, inference. | [GitHub](https://github.com/rdpackages/rdrobust) • [PyPI](https://pypi.org/project/rdrobust/) | `pip install rdrobust`            |
 | **rdd**                     | Toolkit for sharp RDD analysis, including bandwidth calculation and estimation, integrating with pandas.                 | [GitHub](https://github.com/evan-magnusson/rdd)                                         | `pip install rdd`                 |
 | **CausalImpact** | Python port of Google's R package for estimating causal effects of interventions on time series using Bayesian structural time-series models. | [Docs](https://google.github.io/CausalImpact/CausalImpact/CausalImpact.html) (R) • [GitHub (Py)](https://github.com/tcassou/causal_impact) | `pip install causalimpact` |
+| **pycinc**      | Changes‑in‑Changes (CiC) estimator for distributional treatment effects (Athey & Imbens 2006). | [PyPI](https://pypi.org/project/pycinc/) | `pip install pycinc` |
+| **pyleebounds** | Lee (2009) sample‑selection bounds for treatment effects; trims treated distribution to match selection rates. | [PyPI](https://pypi.org/project/pyleebounds/) | `pip install pyleebounds` |
 
 ---
 
@@ -293,6 +297,7 @@ Methods for modeling the conditional quantiles or the entire conditional distrib
 | **Statsmodels**    | Provides an implementation of quantile regression.                                                        | [Docs](https://www.statsmodels.org/stable/generated/statsmodels.regression.quantile_regression.QuantReg.html) • [GitHub](https://github.com/statsmodels/statsmodels) | `pip install statsmodels`  |
 | **pyqreg**         | Fast quantile regression solver using interior point methods, supporting robust and clustered standard errors. | [Docs & GitHub](https://github.com/mozjay0619/pyqreg)                                              | `pip install pyqreg`     |
 | **quantile-forest**| Scikit-learn compatible implementation of Quantile Regression Forests for non-parametric estimation.         | [Docs](https://zillow.github.io/quantile-forest/) • [GitHub](https://github.com/zillow/quantile-forest) | `pip install quantile-forest`|
+| **pyrifreg** | Recentered Influence‑Function (RIF) regression for unconditional quantile & distributional effects (Firpo et al., 2008). | [Docs & GitHub](https://github.com/vyasenov/pyrifreg) | `pip install pyrifreg` |
 
 ---
 
